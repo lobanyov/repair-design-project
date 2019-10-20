@@ -299,3 +299,23 @@
     border-radius: 50%;
   }
 }
+
+.check__box {
+  position: absolute;
+  margin-top: 0;
+  margin-left: -17px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 0.05em;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  box-shadow: 0 0 0 0.1em #E3B873;
+}
+
+.checkbox-field__checkbox:checked + .check__box {
+  background-color: #E3B873;
+  background-image: url("../assets/images/Vector.svg");
+}
+
