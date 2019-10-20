@@ -32,7 +32,7 @@
   &__heading {
     padding: 0;
     margin: 0;
-    font-family: Yeseva One;
+    font-family: Yeseva One, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.11rem;
@@ -60,7 +60,7 @@
     height: 57px;
     padding: 0;
     margin: 0 0 27px 0;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 1.11rem;
     line-height: 1.5rem;
     text-align: center;
@@ -209,7 +209,7 @@
 }
 
 .projects-cards__heading {
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-style: normal;
   font-weight: normal;
   margin: 23px 0 0 10.61%;
@@ -244,7 +244,7 @@
 
 .projects-cards__item {
   margin: 0;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, sans-serif;
   font-size: 0.83rem;
   line-height: 1.39rem;
   color: #959595;
@@ -265,7 +265,7 @@
   padding: 0;
   background: $second-base-color;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-  font-family: Yeseva One;
+  font-family: Yeseva One, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;

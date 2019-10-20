@@ -45,7 +45,7 @@
       height: 131px;
       margin: 0 auto;
       margin-top: 26px;
-      font-family: FuturaBookC;
+      font-family: FuturaBookC, sans-serif;
       font-size: 1.11rem;
       line-height: 1.89rem;
       text-align: center;
@@ -89,7 +89,7 @@
     height: 26px;
     padding: 0;
     margin: 0;
-    font-family: Yeseva One;
+    font-family: Yeseva One, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.11rem;
@@ -160,7 +160,7 @@
   }
 
   &__label {
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 0.83rem;
     line-height: 1.11rem;
     color: rgba(54, 54, 54, 0.5);
@@ -194,7 +194,7 @@
   &__input {
     background: transparent;
     border: 0;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 1rem;
     line-height: 1.33rem;
     color: #363636;
@@ -226,7 +226,7 @@
     background-color: $second-base-color;
     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
     border-radius: 2px;
-    font-family: FuturaDemiC;
+    font-family: FuturaDemiC, sans-serif;
     font-size: 0.83rem;
     line-height: 1.44rem;
     text-align: center;
@@ -265,7 +265,7 @@
   height: 18px;
   margin: 33px 0 0 30.95%;
   padding: 0;
-  font-family: FuturaBookC;
+  font-family: FuturaBookC, sans-serif;
   font-size: 0.89rem;
   line-height: 1.22rem;
   color: #181818;

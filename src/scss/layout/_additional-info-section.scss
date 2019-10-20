@@ -72,7 +72,7 @@
     display: block;
     width: 34px;
     height: 21px;
-    font-family: Yeseva One;
+    font-family: Yeseva One, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
@@ -86,7 +86,7 @@
     height: 42px;
     margin: 16px 0 0 0;
     padding: 0;
-    font-family: Yeseva One;
+    font-family: Yeseva One, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 0.83rem;
@@ -99,7 +99,7 @@
     height: 115px;
     margin: 0;
     padding: 0;
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 0.83rem;
     line-height: 1.39rem;
     color: #FFFFFF;
@@ -108,7 +108,7 @@
       height: 111px;
       margin: 13px 0 0 0;
       padding: 0;
-      font-family: FuturaBookC;
+      font-family: FuturaBookC, sans-serif;
       font-size: 0.83rem;
       line-height: 1.39rem;
       color: #FFFFFF;
@@ -258,7 +258,7 @@
     height: 20px;
     border-bottom: 1px solid $second-base-color;
     text-align: center;
-    font-family: Yeseva One;
+    font-family: Yeseva One, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 0.83rem;
@@ -269,7 +269,7 @@
   }
 
   .additional-info-section__span--li {
-    font-family: FuturaBookC;
+    font-family: FuturaBookC, sans-serif;
     font-size: 0.83rem;
     line-height: 1rem;
     color: #fff;
