@@ -1,8 +1,8 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 module.exports = {
-  entry: './src/app.js',
+  mode: 'development',
+  entry: { main: './src/javascript/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -10,57 +10,37 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
+        test: /.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
+      },
+      {
+        test: /.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "assets/images"
+            }
           }
-        }
+        ]
       },
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /.(woff|woff2|ttf|otf|eot)$/,
         use: [
-               {
-                 loader: "css-loader",
-               },
-               {
-                 loader: "postcss-loader"
-               },
-               {
-                 loader: "sass-loader",
-                 options: {
-                   implementation: require("sass")
-                 }
-               }
-             ]
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "assets/fonts"
+            }
+          }
+        ]
       },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        use: [
-               {
-                 loader: "file-loader",
-                 options: {
-                   outputPath: 'images'
-                 }
-               }
-             ]
-      },
-      {
-        test: /\.(woff|woff2|ttf|otf|eot)$/,
-        use: [
-               {
-                 loader: "file-loader",
-                 options: {
-                   outputPath: 'fonts'
-                 }
-               }
-             ]
-      }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('main.css')
   ]
 };

@@ -1,0 +1,261 @@
+.service-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1092px;
+  background-color: #fff;
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+  }
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
+
+  &__service-list {
+    width: 702px;
+    height: 645px;
+    margin: 124px 0 0 0;
+    background: url("../assets/images/house-img.png");
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__list {
+    position: relative;
+    width: 636px;
+    height: 636px;
+    margin: 55px 0 0 0;
+    list-style: none;
+    background: url("../assets/images/circle.svg") no-repeat;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: $second-base-color;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__span {
+    margin: 0 auto;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.39rem;
+    text-align: center;
+    color: #fff;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+}
+
+.circle-first {
+  position: absolute;
+  top: 62px;
+  left: 357px;
+}
+
+.circle-first:after {
+  position: absolute;
+  top: -3px;
+  left: 59px;
+  content: "Our specialist will arrive for measurements per day contact, or appoint a date convenient for you";
+  width: 364px;
+  height: 42px;
+  font-family: FuturaMediumC;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  text-align: start;
+  color: #363636;
+}
+
+.circle-second {
+  position: absolute;
+  top: 173px;
+  left: 432px;
+}
+
+.circle-second:after {
+  position: absolute;
+  top: 7px;
+  left: 59px;
+  content: "Free metering";
+  width: 364px;
+  height: 42px;
+  font-family: FuturaMediumC;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  text-align: start;
+  color: #363636;
+}
+
+.circle-third {
+  position: absolute;
+  top: 334px;
+  left: 457px;
+}
+
+.circle-third:after {
+  position: absolute;
+  top: 8px;
+  left: 57px;
+  content: "Free consultation";
+  width: 364px;
+  height: 42px;
+  font-family: FuturaMediumC;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  text-align: start;
+  color: #363636;
+}
+
+.circle-fourth {
+  position: absolute;
+  top: 494px;
+  left: 392px;
+}
+
+.circle-fourth:after {
+  position: absolute;
+  top: -2px;
+  left: 55px;
+  content: "Get a cost estimate and the timing of your future repairs";
+  width: 230px;
+  height: 42px;
+  font-family: FuturaMediumC;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  text-align: start;
+  color: #363636;
+}
+
+.service-section__form {
+  display: flex;
+  flex-direction: column;
+  width: 506px;
+  height: 509px;
+  margin: 230px 0 0 132px;
+  background-color: $base-color;
+
+  @media screen and (max-width: 1370px) {
+    display: none;
+  }
+}
+
+.service-form__heading {
+  width: 297px;
+  height: 47px;
+  padding: 0;
+  margin: 24px auto 0;
+  font-family: FuturaDemiC;
+  font-size: 1.11rem;
+  line-height: 1.39rem;
+  text-align: center;
+  color: #fff;
+}
+
+.service-form .form-section__field:nth-child(2) {
+  width: 408px;
+  height: 50px;
+  margin: 40px auto 0;
+}
+
+.service-form .form-section__field:nth-child(3) {
+  width: 408px;
+  height: 50px;
+  margin: 47px auto 0;
+}
+
+.service-form .form-section__field:nth-child(4) {
+  width: 408px;
+  height: 50px;
+  margin: 47px auto 0;
+}
+
+.service-form .checkbox-field {
+  margin: 19px 0 0 49px;
+}
+
+.service-form .checkbox-field > label {
+  color: #fff;
+}
+
+.service-form .form-section__input-submit {
+  width: 213px;
+  height: 51px;
+  font-size: 0.73rem;
+  line-height: 1rem;
+  margin: 39px 0 0 244px;
+  border-radius: 0;
+}
+
+.service-form .form-section__label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.service-form .form-section__input {
+  color: #fff;
+  line-height: 1.8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.notice-section {
+  display: flex;
+  align-items: center;
+  width: 441px;
+  height: 74px;
+  margin: 0px 0 234px 865px;
+
+  @media screen and (max-width: 1370px) {
+    display: none;
+  }
+
+  &__logo {
+    display: flex;
+    text-align: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: $second-base-color;
+  }
+
+  &__img {
+    width: 40px;
+    height: 33px;
+    margin: 20px auto 0;
+  }
+
+  &__paragraph {
+    width: 334px;
+    height: 47px;
+    margin: 0 0 0 27px;
+    font-family: FuturaDemiC;
+    font-size: 1.11rem;
+    line-height: 1.39rem;
+    color: $second-base-color;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  }
+}
+

@@ -1,0 +1,23 @@
+footer.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 133px;
+  background-color: #181818;
+
+  @media screen and (max-width: 875px) {
+    display: none;
+  }
+
+  .menu-logo {
+    margin: 0 0 0 6.39%;
+  }
+
+  .menu__navigation {
+    margin: 0 0 3px 6.32%;
+  }
+
+  .phone-contacts__link {
+    margin: 0 0 6px 11px;
+  }
+}

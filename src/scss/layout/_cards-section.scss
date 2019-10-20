@@ -1,0 +1,247 @@
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 706px;
+  background-color:#fff;
+
+  @media screen and (max-width: 375px) {
+    justify-content: flex-start;
+    width: 375px;
+    height: 1793px;
+  }
+
+  &__heading-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 257px;
+    height: 67px;
+    margin: 0 auto;
+    
+    @media screen and (max-width: 375px) {
+      width: 257px;
+      height: 71px;
+      margin: 56px auto 0;
+    }
+  }
+
+  &__heading {
+    width: 257px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.11rem;
+    line-height: 1.55rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1.22rem;
+      line-height: 1.67rem;
+    }
+  }
+
+  &__logo {
+    width: 114px;
+    height: 28px;
+    align-self: center;
+    background-image: url("../assets/images/types-of-repair-logo.svg");
+  }
+}
+
+.cards-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85.83%;
+  height: 608px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1020px) {
+    justify-content: unset;
+    width: 650px;
+  }
+
+  @media screen and (max-width: 670px) {
+    width: 340px;
+  }
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 340px;
+    height: 1451px;
+    margin: 42px auto 0;
+  }
+
+  &__card--first {
+    position: relative;
+    width: 31.72%;
+    height: 421px;
+    background: url("../assets/images/first-card.png");
+
+    @media screen and (max-width: 1020px) {
+      width: 317px;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 340px;
+      height: 365px;
+      background: url("../assets/images/first-card-mobile.png");
+    }
+  }
+
+  &__card--second {
+    position: relative;
+    width: 31.72%;
+    height: 421px;
+    background: url("../assets/images/second-card.png");
+
+    @media screen and (max-width: 1020px) {
+      margin-left: 15px;
+      width: 317px;
+    }
+
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 375px) {
+      display: unset;
+      margin-left: unset;
+      width: 340px;
+      height: 365px;
+      background: url("../assets/images/second-card-mobile.png");
+    }
+  }
+
+  &__card--third {
+    position: relative;
+    width: 31.72%;
+    height: 421px;
+    background: url("../assets/images/third-card.png");
+
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 375px) {
+      display: unset;
+      width: 340px;
+      height: 365px;
+      background: url("../assets/images/third-card-mobile.png");
+    }
+  }
+}
+
+.cards-block__description {
+  position: absolute;
+  top: 294px;
+  left: 7.91%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 84.18%;
+  height: 286px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+
+  @media screen and (max-width: 375px) {
+    top: 223px;
+    left: 0;
+    width: 270px;
+    height: 241px;
+  }
+}
+
+.cards-block__heading {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  margin: 23px 0 0 10.61%;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.39rem;
+  color: #363636;
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.83rem;
+    margin: 18px 0 0 31px;
+  }
+}
+
+.cards-block__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80.91%;
+  height: 178px;
+  padding: 0;
+  margin: 5px 0 0 14.85%;
+
+  @media screen and (max-width: 375px) {
+    width: 198px;
+    height: 152px;
+    margin: 4px 0 0 47px;
+  }
+
+  .cards-block__item {
+    margin: 0;
+    font-family: FuturaBookC;
+    font-size: 0.83rem;
+    line-height: 1.39rem;
+    color: #959595;
+
+    @media screen and (max-width: 375px) {
+      font-size: 0.72rem;
+      line-height: 1.22rem;
+    }
+  }
+}
+
+.cards-block__paragraph {
+  display: flex;
+  position: absolute;
+  top: 554px;
+  left: 7.91%;
+  width: 58.16%;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  background: $second-base-color;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.39rem;
+  text-transform: uppercase;
+  color: #fff;
+
+  @media screen and (max-width: 1340px) {
+    font-size: 0.83rem;
+    line-height: 1.17rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    top: 444px;
+    left: 0;
+    width: 190px;
+    height: 40px;
+    font-size: 0.83rem;
+    line-height: 1.17rem;
+  }
+
+  .cards-block__span {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,312 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.upper-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 707px;
+
+  @media screen and (max-width: 375px) {
+    height: 476px;
+  }
+
+  @media screen and (max-width: 1040px) {
+    width: 100%;
+    max-width: 1015px;
+  }
+
+  &__social-network {
+    position: relative;
+    width: 5.6945%;
+    height: 707px;
+    background-color: $base-color;
+
+    @media screen and (max-width: 1040px) {
+      width: 0;
+    }
+  }
+}
+
+.social-network {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__link {
+    display: block;
+    width: 13px;
+    height: 148px;
+    padding: 0;
+    margin: 0 auto 105px;
+    background: url("../assets/images/Instagram-logo.svg");
+  }
+}
+
+.upper-main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 94.3055%;
+  background: url("../assets/images/upper-bg.png");
+  background-size: cover;
+
+  @media screen and (max-width: 1040px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    background: url("../assets/images/upper-bg-mobile.png") no-repeat;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 676px;
+    height: 305px;
+    margin: 194px 0 0 4.42%;
+
+    @media screen and (max-width: 1040px) {
+      width: 40%;
+      height: 320px;
+      margin: 194px 0 0 10%;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 339px;
+      height: 330px;
+      margin: 84px 0 0 18px;
+      justify-content: flex-start;
+    }
+  }
+
+  &__heading {
+    display: block;
+    width: 80%;
+    height: 105px;
+    margin: 0;
+    padding: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.23rem;
+    line-height: 2.94rem;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1040px) {
+      width: 350px;
+      font-size: 1.3rem;
+      line-height: 1.4rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 339px;
+      height: 60px;
+      font-size: 1.28rem;
+      line-height: 1.72rem;
+      margin: 0 0 0 0;
+    }
+  }
+
+  &__span {
+    color: $second-base-color;
+  }
+
+  &__paragraph {
+    width: 74.55%;
+    height: 89px;
+    padding: 0;
+    margin: 0 0 30px 0;
+    font-family: FuturaBookC;
+    font-size: 1.22rem;
+    line-height: 1.67rem;
+    color: #fff;
+
+    @media screen and (max-width: 1040px) {
+      width: 330px;
+      height: 110px;
+      font-size: 0.9rem;
+      line-height: 1.13rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  &__paragraph--mobile {
+    display: none;
+    padding: 0;
+    margin: 14px 0 0 0;
+    width: 340px;
+    height: 94px;
+    font-size: 1rem;
+    line-height: 1.33rem;
+    font-family: FuturaBookC;
+    color: #fff;
+
+    @media screen and (max-width: 375px) {
+      display: unset;
+    }
+  }
+}
+
+.upper-main-info__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 434px;
+  height: 51px;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    width: 339px;
+    height: 128px;
+    margin: 34px 0 0 0;
+  }
+
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+    width: 207px;
+    height: 150px;
+  }
+}
+
+.upper-main-info__button {
+  &--first {
+    width: 207px;
+    height: 51px;
+    padding: 0;
+    font-family: FuturaDemiC;
+    font-size: 0.72rem;
+    line-height: 0.83rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+    background-color: $second-base-color;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+
+    @media screen and (max-width: 375px) {
+      width: 339px;
+      height: 51px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $base-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--second, &--second-mobile {
+    width: 207px;
+    height: 51px;
+    padding: 0;
+    font-family: FuturaDemiC;
+    font-size: 0.72rem;
+    line-height: 0.83rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+
+    @media screen and (max-width: 375px) {
+      width: 339px;
+      height: 51px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(175, 158, 158);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--second-mobile {
+    display: none;
+
+    @media screen and (max-width: 375px) {
+      display: unset;
+    }
+  }
+
+  &--second {
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 658px;
+  width: 247px;
+  height: 97px;
+  background-color: $base-color;
+
+  &:hover {
+    background-color: rgb(59, 56, 56);
+  }
+
+  &__btn {
+    position: relative;
+    width: 150px;
+    height: 29px;
+    padding: 0;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78rem;
+    line-height: 1.06rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    text-align: left;
+
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 29px;
+      height: 29px;
+      margin: -24px 0 0 120px;
+      background: url("../assets/images/scroll-down.svg");
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media screen and (max-width: 1340px) {
+    display: none;
+  }
+}
